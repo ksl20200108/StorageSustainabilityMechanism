@@ -1,1 +1,1 @@
-
+This folder stores peers list.
