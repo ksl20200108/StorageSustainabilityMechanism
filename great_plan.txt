@@ -1,0 +1,34 @@
+1. build two nodes from yaml file using command line with specific ip address, called "peer_handler" and "experimenter"
+2. before connecting to other nodes the node connect to the "peer_handler" to know its own ip
+3. the node wait for peer_handler's peer_list
+4. at the same time, the peer_handler collect ip until it gets enough
+
+
+"""old""":
+the code that used for static ip mode
+
+"""new""":
+the code that serves for dynamic ip mode
+
+peer_handler:
+ip = '192.168.1.1'
+
+experimenter:
+ip = '192.168.1.0'
+
+Step1:
+test getting own ip and peer_list
+
+Step2:
+change the write_main.py write_compose.py data.py
+make a overlay network in the yaml file and let the docker swarm join it
+
+Step3:
+change the start_experiment.sh
+
+Step4:
+upload GitHub, test on the cloud
+
+下一步，创建overlay网络，在overlay网络下建立随机ip节点
+下一步，分别把experimenter、peerhandler和其他节点的设定写入两份yaml文件，前一份通过command line启动，再用docker swarm stack
+启动后一份，加入前一份搭建的overlay network
