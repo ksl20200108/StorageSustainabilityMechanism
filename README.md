@@ -2,7 +2,7 @@
 
 > *A demo for testing a new bitcoin mechanism using docker swarm with clustered cloud instances.*
 > 
-> *The number of miner nodes can be scale to more than 10^4.*
+> *The number of miner nodes can be scaled to more than 10^4.*
 
 ### Environment Setup
 
